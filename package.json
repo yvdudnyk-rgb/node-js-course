@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node src/index.js",
+    "server": "node --watch src/index.js",
     "migration:generate": "drizzle-kit generate",
     "migration:push": "drizzle-kit push"
   },
@@ -20,9 +20,10 @@
   "homepage": "https://github.com/yvdudnyk-rgb/node-js-course#readme",
   "description": "",
   "dependencies": {
+    "body-parser": "^2.2.2",
     "drizzle-orm": "^0.45.2",
     "express": "^5.1.0",
-    "pg": "^8.11.3"
+    "pg": "^8.20.0"
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.10"
